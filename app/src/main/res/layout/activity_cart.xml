@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CartActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/relative_layout"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentTop="true">
+        <TextView
+            android:id="@+id/total_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total amount: "
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"/>
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/msg1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:text="Order Placed Successfully"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cart_list"
+        android:layout_above="@+id/next_btn"
+        android:layout_below="@+id/relative_layout">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/total_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_above="@+id/next_btn"
+        android:background="@color/colorPrimaryDark"
+        android:text="Total Amount"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        android:text="Next"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+</RelativeLayout>

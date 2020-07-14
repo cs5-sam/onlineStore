@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:id="@+id/app_bar_settings"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/close_settings_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Close"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/update_account_settings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Update"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp"
+                        android:layout_toRightOf="@+id/close_settings_btn"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="230dp"/>
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:id="@+id/settings_profile_image"
+            android:src="@drawable/profile"
+            android:layout_below="@+id/app_bar_settings"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/profile_image_change_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Change Profile"
+            android:layout_marginTop="4dp"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:layout_below="@+id/settings_profile_image"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/settings_phone_number"
+            android:layout_below="@+id/profile_image_change_btn"
+            android:hint="Phone number"
+            android:padding="10dp"
+            android:layout_margin="15dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/settings_full_name"
+            android:layout_below="@+id/settings_phone_number"
+            android:hint="Full name"
+            android:padding="10dp"
+            android:layout_margin="15dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/settings_address"
+            android:layout_below="@+id/settings_full_name"
+            android:hint="Address"
+            android:layout_margin="15dp"
+            android:padding="10dp"/>
+        <Button
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/security_questions"
+            android:layout_below="@+id/settings_address"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorPrimaryDark"
+            android:text="Set Security Question"
+            android:textColor="#ffffff"
+            android:layout_margin="15dp"
+            android:padding="10dp"/>
+    </RelativeLayout>
+</ScrollView>

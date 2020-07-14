@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@drawable/back1">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:src="@drawable/applogo"
+            android:id="@+id/register_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="190dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_name_input"
+            android:layout_below="@+id/register_image"
+            android:background="@drawable/input_design"
+            android:padding="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="Enter Your name"
+            android:inputType="text"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_phone_input"
+            android:layout_below="@+id/register_name_input"
+            android:background="@drawable/input_design"
+            android:padding="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="Enter phone number"
+            android:inputType="number"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:textColorHint="#ffffff"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_password_input"
+            android:layout_below="@+id/register_phone_input"
+            android:background="@drawable/input_design"
+            android:padding="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:hint="Enter password"
+            android:inputType="textPassword"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_btn"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_below="@+id/register_password_input"
+            android:background="@drawable/buttons"
+            android:layout_alignParentLeft="true"
+            android:padding="17dp"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:text="Create Account"
+            android:textColor="#ffffff"/>
+    </RelativeLayout>
+</ScrollView>
